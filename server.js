@@ -41,6 +41,12 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    protofolio: 'My on portofolio'
+  })
+})
+
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page'
